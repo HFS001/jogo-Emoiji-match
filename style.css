@@ -52,3 +52,22 @@ body::before {
 }
 
 
+@media (max-width: 768px) {
+  .grid div {
+    width: 35px;
+    height: 35px;
+  }
+
+  #gameScreen, #welcomeScreen {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  h1.display-4, h1.display-5 {
+    font-size: 1.5rem;
+  }
+
+  .score, .timer, #player-name-display {
+    font-size: 1rem;
+  }
+}
