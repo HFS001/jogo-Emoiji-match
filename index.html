@@ -11,12 +11,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-light text-center">
+<body class="text-center">
+
 
   <div class="container py-5">
 
     <!-- Welcome Screen -->
-    <div id="welcomeScreen" class="card p-4 shadow-lg border-warning bg-white">
+    <div id="welcomeScreen">
       <h1 class="display-4 text-warning">🎮 Welcome to Emoji Match!</h1>
       <p class="lead mb-4">Match the emojis before the time runs out! Are you ready?</p>
 
@@ -27,7 +28,7 @@
     </div>
 
     <!-- Game Screen -->
-    <div id="gameScreen" class="card p-4 shadow-lg border-primary bg-white mt-5" style="display: none;">
+    <div id="gameScreen" style="display: none;">
       <h1 class="display-5 text-primary">🍬 Emoji Match</h1>
       <div id="player-name-display" class="mb-3 fs-5 text-primary fw-semibold"></div>
       
@@ -67,7 +68,7 @@
 
   <!-- Bootstrap JS and Game Logic -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script1.js"></script>
+  <script src="script.js"></script>
 
   <script>
     function startGame() {

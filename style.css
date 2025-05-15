@@ -16,3 +16,39 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('images/backround2.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* تیره شدن */
+  backdrop-filter: blur(3px);          /* حالت بلور */
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1; /* برای اینکه روی پس‌زمینه بماند */
+}
+
+
+#gameScreen, #welcomeScreen {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
